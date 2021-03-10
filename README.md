@@ -7,9 +7,6 @@
 ![image-20210310213208143](README.assets/image-20210310213208143.png)
 
 
-
-## YOLO object detection
-
 ### Environment
 
 - ubuntu 18.04
@@ -41,8 +38,14 @@ catkin_make
 source devel/setup.bash
 ```
 
-#### Run
+#### Run for contol robot
 
+```bash
+roslaunch city_sim_gazebo main.launch
+roslaunch multi_robot multi_robot_control.launch
+rosrun yolo yolo_ros.py
+```
+### Run for yolo
 ```bash
 rosrun yolo yolo_ros.py
 ```

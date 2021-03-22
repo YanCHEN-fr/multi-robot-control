@@ -132,7 +132,10 @@ class movement(object):
         self.velocity_publisher2.publish(self.vel_msg)
         self.rate.sleep()
 
-
+'''
+ author: yowlings 
+ modified by David Filliat and Yan CHEN
+'''
 class pathfind(movement):
     """
     Path finding in a occupancy grid map using AStar algorithms
